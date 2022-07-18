@@ -1,0 +1,37 @@
+<html>
+   <body>
+      <form action = "http://127.0.0.1:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+
+         <label for="category">Select a category:</label>
+         <select id="category" name="category">
+            <option value="Prescription" selected>Prescription</option>
+            <option value="Lab-Report">Lab Report</option>
+            <option value="other">Other Documents</option>
+         </select>
+
+         <label for="fname">Enter UserID:</label>
+         <input type="text" name="userId">
+
+         <label for="fname">Document Name:</label>
+         <input type="text" name="documentName">
+
+         <label for="fname">Hospital Name:</label>
+         <input type="text" name="hospitalName">
+
+         <label for="fname">Doctor Name:</label>
+         <input type="text" name="doctorName">
+
+         <label for="fname">Hospital Name:</label>
+         <input type="text" name="hospitalName">
+
+         <label for="fname">Issued Date:</label>
+         <input type="text" name="issuedDate">
+
+         <input type="hidden" name="documentURL" value="testURL">
+                  
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>

@@ -14,3 +14,4 @@ class documentModel(db.Model):
     hospitalName = db.Column(db.String(200), nullable=False)
     issuedDate = db.Column(db.String(200), nullable=False)
     documentURL = db.Column(db.String(200), nullable=False)
+    documentFile = db.Column(db.LargeBinary, nullable=True)
